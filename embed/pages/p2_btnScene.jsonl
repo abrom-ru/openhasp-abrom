@@ -1,0 +1,30 @@
+{"page": 2, "id": 0, "bg_color": "#14110E", "text_color": "#E7E3DC", "swipe": {"left": "page 3", "right": "page 1"}}
+{"page": 2, "id": 10, "obj": "obj", "x": 0, "y": 0, "w": 480, "h": 36, "bg_color": "#1A1713", "radius": 0, "border_width": 0, "click": false, "border_side": 0,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+{"page": 2, "id": 11, "obj": "label", "x": 16, "y": 8, "w": 280, "h": 20, "text": "УСТРОЙСТВА", "text_font": "montserrat14", "align": 0, "click": false, "text_color": "#8A8377"}
+{"page": 2, "id": 12, "obj": "label", "x": 384, "y": 8, "w": 80, "h": 20, "text": "88:88", "text_font": "montserrat18", "align": 2, "click": false, "text_color": "#E7E3DC", "template": "%H:%M"}
+
+{"page": 2, "id": 20, "obj": "btn", "x": 24, "y": 52, "w": 210, "h": 100, "radius": 14, "text": "", "toggle": true, "val": 1, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 2, "id": 21, "obj": "label", "x": 38, "y": 64, "w": 36, "h": 36, "text": "\uE769", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 2, "id": 22, "obj": "label", "x": 38, "y": 112, "w": 184, "h": 28, "text": "Люстра", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}
+
+{"page": 2, "id": 30, "obj": "btn", "x": 246, "y": 52, "w": 210, "h": 100, "radius": 14, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 2, "id": 31, "obj": "label", "x": 260, "y": 64, "w": 36, "h": 36, "text": "\uE8DD", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 2, "id": 32, "obj": "label", "x": 260, "y": 112, "w": 184, "h": 28, "text": "Торшер", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}
+
+{"page": 2, "id": 40, "obj": "btn", "x": 24, "y": 164, "w": 210, "h": 100, "radius": 14, "text": "", "toggle": true, "val": 1, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 2, "id": 41, "obj": "label", "x": 38, "y": 176, "w": 36, "h": 36, "text": "\uE502", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 2, "id": 42, "obj": "label", "x": 38, "y": 224, "w": 184, "h": 28, "text": "Телевизор", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}
+
+{"page": 2, "id": 50, "obj": "btn", "x": 246, "y": 164, "w": 210, "h": 100, "radius": 14, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 2, "id": 51, "obj": "label", "x": 260, "y": 176, "w": 36, "h": 36, "text": "\uE6A5", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 2, "id": 52, "obj": "label", "x": 260, "y": 224, "w": 184, "h": 28, "text": "Розетка", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}
+
+{"page": 2, "id": 55, "obj": "label", "x": 24, "y": 296, "w": 200, "h": 18, "text": "СЦЕНАРИИ", "text_font": "montserrat14", "align": 0, "click": false, "text_color": "#8A8377"}
+
+{"page": 2, "id": 60, "obj": "btn", "x": 24, "y": 324, "w": 210, "h": 100, "radius": 12, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 2, "id": 61, "obj": "label", "x": 38, "y": 336, "w": 36, "h": 36, "text": "\uE502", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 2, "id": 62, "obj": "label", "x": 38, "y": 384, "w": 184, "h": 28, "text": "Кино", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}
+
+{"page": 2, "id": 70, "obj": "btn", "x": 246, "y": 324, "w": 210, "h": 100, "radius": 12, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 2, "id": 71, "obj": "label", "x": 260, "y": 336, "w": 36, "h": 36, "text": "\uE594", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 2, "id": 72, "obj": "label", "x": 260, "y": 384, "w": 184, "h": 28, "text": "Всё выключить", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}

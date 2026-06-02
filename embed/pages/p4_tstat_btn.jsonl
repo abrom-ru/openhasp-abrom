@@ -1,0 +1,25 @@
+{"page": 4, "id": 0, "bg_color": "#14110E", "text_color": "#E7E3DC", "swipe": {"left": "page 5", "right": "page 3"}}
+{"page": 4, "id": 10, "obj": "obj", "x": 0, "y": 0, "w": 480, "h": 36, "bg_color": "#1A1713", "radius": 0, "border_width": 0, "click": false, "border_side": 0,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+{"page": 4, "id": 11, "obj": "label", "x": 16, "y": 8, "w": 280, "h": 20, "text": "ГОСТИНАЯ", "text_font": "montserrat14", "align": 0, "click": false, "text_color": "#8A8377"}
+{"page": 4, "id": 12, "obj": "label", "x": 384, "y": 8, "w": 80, "h": 20, "text": "88:88", "text_font": "montserrat18", "align": 2, "click": false, "text_color": "#E7E3DC", "template": "%H:%M"}
+{"page": 4, "id": 20, "obj": "label", "x": 24, "y": 50, "w": 260, "h": 18, "text": "ТЕРМОСТАТ", "text_font": "montserrat14", "align": 0, "click": false, "text_color": "#8A8377"}
+{"page": 4, "id": 21, "obj": "label", "x": 320, "y": 50, "w": 80, "h": 18, "text": "Сейчас", "text_font": "montserrat14", "align": 2, "click": false, "text_color": "#8A8377"}
+{"page": 4, "id": 22, "obj": "label", "x": 360, "y": 50, "w": 96, "h": 18, "text": "21.4°", "text_font": "montserrat14", "align": 2, "click": false, "text_color": "#E7E3DC"}
+{"page": 4, "id": 30, "obj": "btn", "x": 36, "y": 125, "w": 70, "h": 70, "text": "\uE374", "text_font": 24, "radius": 35, "align": 1, "toggle": false, "bg_color": "#1A1713", "bg_color01": "#E5AC68", "bg_color02": "#B87A30", "border_color": "#4A463F", "border_color01": "#EBA85C", "border_color02": "#E5AC68","border_width": 2,"bg_grad_dir": 0, "bg_grad_dir02": 0, "text_color": "#D79A4A"}
+{"page": 4, "id": 31, "obj": "label", "x": 116, "y": 80, "w": 248, "h": 130, "text": "23°", "text_font": "montserrat128", "align": 1, "click": false, "text_color": "#E7E3DC"}
+{"page": 4, "id": 32, "obj": "btn", "x": 374, "y": 125, "w": 70, "h": 70, "text": "\uE415", "text_font": 24, "radius": 35, "align": 1, "toggle": false, "bg_color": "#1A1713", "bg_color01": "#E5AC68", "bg_color02": "#B87A30", "border_color": "#4A463F", "border_color01": "#EBA85C", "border_color02": "#E5AC68","border_width": 2,"bg_grad_dir": 0, "bg_grad_dir02": 0, "text_color": "#D79A4A"}
+
+{"page": 4, "id": 33, "obj": "label", "x": 0, "y": 218, "w": 480, "h": 18, "text": "ЦЕЛЬ", "text_font": "montserrat12", "align": 1, "click": false, "text_color": "#D79A4A"}
+{"page": 4, "id": 40, "obj": "obj", "x": 24, "y": 250, "w": 432, "h": 58, "bg_color": "#1A1713", "radius": 12, "border_width": 0, "click": false,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+
+{"page": 4, "id": 41, "obj": "btn", "x": 28, "y": 254, "w": 140, "h": 50, "radius": 8, "text": "\uE238 Нагрев", "text_font": "18", "align": 1, "toggle": true, "val": 0, "bg_color": "#1A1713", "bg_color01": "#B87A30", "bg_color02": "#A06A2A", "bg_color03": "#A06A2A", "text_color": "#E7E3DC", "text_color01": "#14110E", "border_width": 0,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+{"page": 4, "id": 42, "obj": "btn", "x": 170, "y": 254, "w": 140, "h": 50, "radius": 8, "text": "\uE717 Охлажд.", "text_font": "18", "align": 1, "toggle": true, "val": 0, "bg_color": "#1A1713", "bg_color01": "#B87A30", "bg_color02": "#A06A2A", "bg_color03": "#A06A2A", "text_color": "#E7E3DC", "text_color01": "#14110E", "border_width": 0,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+{"page": 4, "id": 43, "obj": "btn", "x": 312, "y": 254, "w": 140, "h": 50, "radius": 8, "text": "\uE32A Авто", "text_font": "18", "align": 1, "toggle": true, "val": 0, "bg_color": "#1A1713", "bg_color01": "#B87A30", "bg_color02": "#A06A2A", "bg_color03": "#A06A2A", "text_color": "#E7E3DC", "text_color01": "#14110E", "border_width": 0,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+
+{"page": 4, "id": 50, "obj": "btn", "x": 24, "y": 396, "w": 210, "h": 56, "radius": 12, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 4, "id": 51, "obj": "label", "x": 36, "y": 408, "w": 36, "h": 32, "text": "\uE599", "text_font": "16", "align": 0, "click": false, "text_color": "#E7E3DC"}
+{"page": 4, "id": 52, "obj": "label", "x": 78, "y": 410, "w": 156, "h": 24, "text": "Комфорт", "text_font": "montserrat16", "align": 0, "click": false, "text_color": "#E7E3DC"}
+{"page": 4, "id": 60, "obj": "btn", "x": 246, "y": 396, "w": 210, "h": 56, "radius": 12, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 4, "id": 61, "obj": "label", "x": 258, "y": 408, "w": 36, "h": 32, "text": "\uE594", "text_font": "16", "align": 0, "click": false, "text_color": "#E7E3DC"}
+{"page": 4, "id": 62, "obj": "label", "x": 300, "y": 410, "w": 156, "h": 24, "text": "Ночь", "text_font": "montserrat16", "align": 0, "click": false, "text_color": "#E7E3DC"}
+

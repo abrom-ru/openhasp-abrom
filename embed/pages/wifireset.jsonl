@@ -1,0 +1,11 @@
+{"page": 12,"id": 0,"bg_color": "#0A0908","text_color": "#E7E3DC"}
+{"page": 12,"id": 10,"obj": "obj","x": 30,"y": 50,"w": 420,"h": 380,"radius": 16,"bg_color": "#1A1713","border_color": "#4A463F","border_width": 2,"click": false,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+{"page": 12,"id": 11,"obj": "label","x": 30,"y": 80,"w": 420,"h": 32,"text": "СБРОСИТЬ WI-FI?","text_font": "montserrat24","align": 1,"click": false}
+{"page": 12,"id": 12,"obj": "label","x": 30,"y": 122,"w": 420,"h": 22,"text": "Текущие настройки будут стёрты","text_font": "montserrat14","text_color": "#8A8377","align": 1,"click": false}
+{"page": 12,"id": 13,"obj": "line","x": 70,"y": 158,"w": 340,"h": 1,"points":[[0,0],[340,0]],"line_color": "#4A463F","line_width": 1,"click": false}
+{"page": 12,"id": 14,"obj": "label","x": 30,"y": 178,"w": 420,"h": 22,"text": "ПОСЛЕ ПЕРЕЗАГРУЗКИ","text_font": "montserrat12","text_color": "#8A8377","align": 1,"click": false}
+{"page": 12,"id": 15,"obj": "label","x": 50,"y": 208,"w": 380,"h": 44,"text": "С телефона: подключиться к Wi-Fi\nHASP-XXXX и открыть 192.168.4.1","text_font": "montserrat14","text_color": "#E7E3DC","align": 1,"click": false}
+{"page": 12,"id": 16,"obj": "label","x": 30,"y": 262,"w": 420,"h": 22,"text": "— ИЛИ —","text_font": "montserrat12","text_color": "#8A8377","align": 1,"click": false}
+{"page": 12,"id": 17,"obj": "label","x": 50,"y": 290,"w": 380,"h": 44,"text": "Ввести данные сети\nпрямо на экране панели","text_font": "montserrat14","text_color": "#E7E3DC","align": 1,"click": false}
+{"page": 12,"id": 20,"obj": "btn","x": 60,"y": 360,"w": 170,"h": 50,"radius": 8,"bg_opa": 0,"border_color": "#4A463F","border_width": 2,"text": "Отмена","text_color": "#8A8377","text_font": "montserrat16","action": {"up": "page 1"}}
+{"page": 12,"id": 21,"obj": "btn","x": 250,"y": 360,"w": 170,"h": 50,"radius": 8,"bg_color": "#D79A4A","bg_color02": "#B87A30","bg_grad_dir": 0,"bg_grad_dir02": 0,"border_width": 0,"text": "Сбросить","text_color": "#14110E","text_font": "montserrat16","action": {"up": "run /wifi_reset.cmd"}}

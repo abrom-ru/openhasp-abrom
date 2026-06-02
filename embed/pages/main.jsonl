@@ -1,0 +1,12 @@
+{"page": 1,"id": 0,"bg_color": "#14110E","text_color": "#E7E3DC","swipe":{"left":"page 2"}}
+{"page": 1,"id": 10,"obj": "label","x": 20,"y": 20,"w": 120,"h": 18,"text": "МОСКВА","text_font": "montserrat14","text_color": "#8A8377","click": false}
+{"page": 1,"id": 11,"obj": "btn","x": 360,"y": 14,"w": 120,"h": 28,"text": "ONLINE","text_font": "montserrat14","text_color": "#4FA86E","align": 2,"bg_opa": 0,"border_side": 0,"radius": 0,"action": {"up": "page 12"}}
+{"page": 1,"id": 20,"obj": "label","x": 0,"y": 80,"w": 480,"h": 22,"text": "ВОСКРЕСЕНЬЕ","template":"%A","text_font": "montserrat18","text_color": "#8A8377","align": 1,"click": false}
+{"page": 1,"id": 21,"obj": "label","x": 0,"y": 120,"w": 480,"h": 170,"text":"88:88","template":"%H:%M","text_font": "montserrat128","align": 1,"click": false}
+{"page": 1,"id": 22,"obj": "label","x": 0,"y": 296,"w": 480,"h": 30,"text":"2024/01/01","template":"%Y/%m/%d","text_font": "montserrat24","align": 1,"click": false}
+{"page": 1,"id": 30,"obj": "line","x": 220,"y": 346,"w": 40,"h": 1,"points":[[0,0],[40,0]],"line_color": "#4A463F","line_width": 1,"click": false}
+{"page": 1,"id": 40,"obj": "label","x": 86,"y": 382,"w": 48,"h": 48,"text": "\uE599","text_font":50,"text_color": "#D79A4A","align": 1,"click": false}
+{"page": 1,"id": 41,"obj": "label","x": 156,"y": 380,"w": 130,"h": 60,"text": "14°","text_font": "montserrat56","click": false}
+{"page": 1,"id": 42,"obj": "line","x": 300,"y": 384,"w": 1,"h": 48,"points":[[0,0],[0,48]],"line_color": "#4A463F","line_width": 1,"click": false}
+{"page": 1,"id": 43,"obj": "label","x": 314,"y": 380,"w": 150,"h": 22,"text": "Ясно","text_font": "montserrat16","click": false}
+{"page": 1,"id": 44,"obj": "label","x": 314,"y": 406,"w": 150,"h": 18,"text": "МОСКВА 8°-17°","text_font": "montserrat14","text_color": "#8A8377","click": false}

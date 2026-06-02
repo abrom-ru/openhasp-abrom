@@ -1,0 +1,29 @@
+{"page": 4,"id": 0,"bg_color": "#14110E","text_color": "#E7E3DC", "swipe": {"left": "page 5", "right": "page 3"}}
+
+{"page": 4,"id": 10,"obj": "obj","x": 0,"y": 0,"w": 480,"h": 36,"bg_color": "#1A1713","border_side": 0,"radius": 0,"click": false,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+{"page": 4,"id": 11,"obj": "label","x": 16,"y": 8,"w": 260,"h": 20,"text": "ГОСТИНАЯ","text_font": "montserrat14","text_color": "#8A8377","click": false}
+{"page": 4,"id": 12,"obj": "label","x": 384,"y": 8,"w": 80,"h": 20,"text":"88:88","template":"%H:%M","text_font": "montserrat18","align": 2,"click": false}
+
+{"page": 4,"id": 20,"obj": "btn","x": 24,"y": 56,"w": 210,"h": 116,"radius": 12,"bg_opa": 0,"bg_opa01": 0,"bg_opa02": 0,"border_opa": 255,"border_opa01": 255,"border_opa02": 255,"border_color": "#4A463F","border_color01": "#D79A4A","border_color02": "#B87A30","border_width": 2,"text": "","toggle": true,"val": 0}
+{"page": 4,"id": 21,"obj": "label","x": 36,"y": 68,"w": 40,"h": 40,"text": "\uE594","text_font": 24,"text_color": "#FFFFFF","align": 0,"click":false}
+{"page": 4,"id": 22,"obj": "label","x": 36,"y": 105,"w": 190,"h": 22,"text": "Вечер","text_color": "#FFFFFF","text_font": "montserrat18","click":false}
+
+{"page": 4,"id": 30,"obj": "btn","x": 246,"y": 56,"w": 210,"h": 116,"radius": 12,"bg_opa": 0,"bg_opa01": 0,"bg_opa02": 0,"border_opa": 255,"border_opa01": 255,"border_opa02": 255,"border_color": "#4A463F","border_color01": "#D79A4A","border_color02": "#B87A30","border_width": 2,"text": "","toggle": true,"val": 0}
+{"page": 4,"id": 31,"obj": "label","x": 258,"y": 68,"w": 40,"h": 40,"text": "\uE502","text_font": 24,"text_color": "#FFFFFF","align": 0,"click":false}
+{"page": 4,"id": 32,"obj": "label","x": 258,"y": 105,"w": 190,"h": 22,"text": "Кино","text_color": "#FFFFFF","text_font": "montserrat18","click":false}
+
+{"page": 4,"id": 40,"obj": "line","x": 24,"y": 192,"w": 432,"h": 1,"points":[[0,0],[432,0]],"line_color": "#4A463F","line_width": 1,"click": false}
+
+{"page": 4,"id": 50,"obj": "label","x": 24,"y": 208,"w": 260,"h": 18,"text": "ТЕРМОСТАТ","text_font": "montserrat14","text_color": "#8A8377","click":false}
+{"page": 4,"id": 51,"obj": "label","x": 276,"y": 208,"w": 60,"h": 18,"text": "Сейчас","text_font": "montserrat14","text_color": "#8A8377","align": 2,"click": false}
+{"page": 4,"id": 52,"obj": "label","x": 325,"y": 208,"w": 60,"h": 18,"text": "21.4°C","text_font": "montserrat14","text_color": "#8A8377","align": 2,"click": false}
+{"page": 4,"id": 53,"obj": "label","x": 402,"y": 208,"w": 54,"h": 18,"text": "Нагрев","text_font": "montserrat14","text_color": "#8A8377","align": 2,"click": false}
+{"page": 4,"id": 54,"obj": "label","x": 24,"y": 232,"w": 432,"h": 130,"text": "20.5°","text_font": "montserrat128","click": false}
+
+{"page": 4,"id": 59,"obj": "obj","x": 28,"y": 393,"w": 428,"h": 18,"radius": 14,"bg_color": "#4A463F","bg_grad_dir": 0,"border_width": 0,"click": false}
+{"page": 4,"id": 60,"obj": "slider","x": 24,"y": 388,"w": 432,"h": 28,"min": 15,"max": 30,"val": 24,"radius": 14,"bg_opa": 0,"bg_color10": "#D79A4A","bg_color20": "#D79A4A","bg_grad_dir": 0,"bg_grad_dir10": 0,"bg_grad_dir20": 0,"radius20": 100,"border_width": 0,"border_color20": "#000000","border_width20": 2}
+
+{"page": 4,"id": 61,"obj": "label","x": 24,"y": 432,"w": 40,"h": 16,"text": "15°","text_font": "montserrat12","text_color": "#4A463F","click": false}
+{"page": 4,"id": 62,"obj": "label","x": 160,"y": 432,"w": 40,"h": 16,"text": "20°","text_font": "montserrat12","text_color": "#4A463F","align": 1,"click": false}
+{"page": 4,"id": 63,"obj": "label","x": 280,"y": 432,"w": 40,"h": 16,"text": "25°","text_font": "montserrat12","text_color": "#4A463F","align": 1,"click": false}
+{"page": 4,"id": 64,"obj": "label","x": 416,"y": 432,"w": 40,"h": 16,"text": "30°","text_font": "montserrat12","text_color": "#4A463F","align": 2,"click": false}

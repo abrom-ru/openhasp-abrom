@@ -9,6 +9,7 @@
 
 #include "dev/device.h"
 #include "drv/tft/tft_driver.h"
+#include "../hasp_embed_pages.h"
 
 // #include "hasp_gui.h"
 
@@ -840,6 +841,31 @@ void dispatch_run_script(const char*, const char* payload, uint8_t source)
 #if HASP_USE_SPIFFS > 0 || HASP_USE_LITTLEFS > 0
 
     if(!HASP_FS.exists(filename)) {
+        size_t embed_len            = 0;
+        const uint8_t* embed_data   = hasp_embed_find(filename, &embed_len);
+        if(embed_data) {
+            LOG_TRACE(TAG_MSGR, F(D_FILE_LOADING), payload);
+            String embed_buffer((char*)0);
+            embed_buffer.reserve(512);
+            const uint8_t* p   = embed_data;
+            const uint8_t* end = embed_data + embed_len;
+            while(p < end) {
+                size_t index = 0;
+                embed_buffer = "";
+                while(p < end && index < MQTT_MAX_PACKET_SIZE) {
+                    char c = (char)*p++;
+                    if(c == '\n' || c == '\r') break;
+                    embed_buffer += c;
+                    index++;
+                }
+                while(p < end && (*p == '\n' || *p == '\r')) p++;
+                if(index > 0 && embed_buffer.charAt(0) != '#') {
+                    dispatch_simple_text_command(embed_buffer.c_str(), TAG_FILE);
+                }
+            }
+            LOG_INFO(TAG_MSGR, F(D_FILE_LOADED), payload);
+            return;
+        }
         LOG_WARNING(TAG_MSGR, F(D_FILE_NOT_FOUND ": %s"), payload);
         return;
     }
