@@ -222,14 +222,9 @@ void mqtt_enqueue_message(const char* topic, const char* payload, size_t payload
 
 void mqtt_process_topic_payload(const char* topic, const char* payload, unsigned int length)
 {
-    if(gui_acquire(pdMS_TO_TICKS(30))) {
-        mqttLoop(); // First empty the MQTT queue
-        LOG_TRACE(TAG_MQTT_RCV, F("%s = %s"), topic, payload);
-        dispatch_topic_payload(topic, payload, length > 0, TAG_MQTT);
-        gui_release();
-    } else {
-        mqtt_enqueue_message(topic, payload, length);
-    }
+    // Never dispatch on mqtt_task: its stack (~6KB) overflows on heavy commands
+    // like `run` that load big fonts. Always enqueue for processing in main loop.
+    mqtt_enqueue_message(topic, payload, length);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
