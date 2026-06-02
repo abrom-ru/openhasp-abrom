@@ -32,6 +32,18 @@
     "reboot"
 #endif
 
+#ifndef HASP_IDLE_LONG_CMD
+#define HASP_IDLE_LONG_CMD "backlight {\"brightness\":10}"
+#endif
+
+#ifndef HASP_IDLE_OFF_CMD
+#define HASP_IDLE_OFF_CMD "backlight {\"brightness\":255}"
+#endif
+
+#ifndef HASP_IDLE_SHORT_CMD
+#define HASP_IDLE_SHORT_CMD "backlight {\"brightness\":80}"
+#endif
+
 #ifdef HASP_USE_EMBED_MONTSERRAT
 extern const uint8_t MONTSERRAT_TTF_START[] asm("_binary_embed_montserrat_ttf_start");
 extern const uint8_t MONTSERRAT_TTF_END[] asm("_binary_embed_montserrat_ttf_end");
@@ -294,6 +306,15 @@ void filesystemSetupFiles()
 #endif
 #ifdef HASP_WIFI_RESET_CMD
     filesystem_write_file("/wifi_reset.cmd", HASP_WIFI_RESET_CMD, strlen(HASP_WIFI_RESET_CMD));
+#endif
+#ifdef HASP_IDLE_LONG_CMD
+    filesystem_write_file("/idle_long.cmd", HASP_IDLE_LONG_CMD, strlen(HASP_IDLE_LONG_CMD));
+#endif
+#ifdef HASP_IDLE_OFF_CMD
+    filesystem_write_file("/idle_off.cmd", HASP_IDLE_OFF_CMD, strlen(HASP_IDLE_OFF_CMD));
+#endif
+#ifdef HASP_IDLE_SHORT_CMD
+    filesystem_write_file("/idle_short.cmd", HASP_IDLE_SHORT_CMD, strlen(HASP_IDLE_SHORT_CMD));
 #endif
 #ifdef HASP_MQTT_ON_CMD
     filesystem_write_file("/mqtt_on.cmd", HASP_MQTT_ON_CMD, strlen(HASP_MQTT_ON_CMD));
