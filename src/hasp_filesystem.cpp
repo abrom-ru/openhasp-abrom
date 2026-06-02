@@ -12,12 +12,29 @@
 #if HASP_USE_SPIFFS > 0 || HASP_USE_LITTLEFS > 0
 
 #ifndef HASP_ONLINE_CMD
-#define HASP_ONLINE_CMD "jsonl {\"page\":0,\"id\":239,\"obj\":\"msgbox\",\"text\":\"%ip%\",\"auto_close\":20000}"
+#define HASP_ONLINE_CMD                                                                                                \
+    "jsonl {\"page\":0,\"id\":239,\"obj\":\"msgbox\",\"text\":\"%ip%\",\"auto_close\":20000} jsonl {\"page\":1,\"id\":11,\"text_color\": \"#4FA86E\"}"
 #endif
 
 #ifndef HASP_OFFLINE_CMD
 #define HASP_OFFLINE_CMD                                                                                               \
-    "jsonl {\"page\":0,\"id\":239,\"obj\":\"msgbox\",\"text\":\"" D_NETWORK_OFFLINE "\",\"auto_close\":20000}"
+    "jsonl {\"page\":0,\"id\":239,\"obj\":\"msgbox\",\"text\":\"offline\",\"auto_close\":20000} jsonl {\"page\":1,\"id\":11,\"text_color\": \"#FF0000\"}"
+#endif
+
+#ifndef HASP_BOOT_CMD
+#define HASP_BOOT_CMD "run wifireset.jsonl\n"
+#endif
+
+#ifndef HASP_WIFI_RESET_CMD
+#define HASP_WIFI_RESET_CMD                                                                                            \
+    "config/wifi {\"ssid\":\"\",\"pass\":\"\"}\n"                                                                      \
+    "config/mqtt {\"host\":\"\"}\n"                                                                                    \
+    "reboot"
+#endif
+
+#ifdef HASP_USE_EMBED_MONTSERRAT
+extern const uint8_t MONTSERRAT_TTF_START[] asm("_binary_embed_montserrat_ttf_start");
+extern const uint8_t MONTSERRAT_TTF_END[] asm("_binary_embed_montserrat_ttf_end");
 #endif
 
 #ifndef HASP_PAGES_JSONL
@@ -275,11 +292,18 @@ void filesystemSetupFiles()
 #ifdef HASP_BOOT_CMD
     filesystem_write_file("/boot.cmd", HASP_BOOT_CMD, strlen(HASP_BOOT_CMD));
 #endif
+#ifdef HASP_WIFI_RESET_CMD
+    filesystem_write_file("/wifi_reset.cmd", HASP_WIFI_RESET_CMD, strlen(HASP_WIFI_RESET_CMD));
+#endif
 #ifdef HASP_MQTT_ON_CMD
     filesystem_write_file("/mqtt_on.cmd", HASP_MQTT_ON_CMD, strlen(HASP_MQTT_ON_CMD));
 #endif
 #ifdef HASP_MQTT_OFF_CMD
     filesystem_write_file("/mqtt_off.cmd", HASP_MQTT_OFF_CMD, strlen(HASP_MQTT_OFF_CMD));
+#endif
+#ifdef HASP_USE_EMBED_MONTSERRAT
+    filesystem_write_file("/montserrat.ttf", (const char*)MONTSERRAT_TTF_START,
+                          MONTSERRAT_TTF_END - MONTSERRAT_TTF_START);
 #endif
 }
 
@@ -295,7 +319,12 @@ bool filesystemSetup(void)
 #if defined(ARDUINO_ARCH_ESP8266)
     if(!HASP_FS.begin()) {
 #else
-    if(HASP_FS.begin(false)) return true; // already formatted
+    if(HASP_FS.begin(false)) {
+        // FS already formatted: re-create any missing default files
+        // (filesystem_write_file skips files that already exist).
+        filesystemSetupFiles();
+        return true;
+    }
 
     if(!HASP_FS.begin(true)) { // format partition
 #endif

@@ -1,1 +1,9 @@
-{"page":1,"id":10,"w":240,"obj":"label","text":"%hostname%"}
+{"page": 1,"id": 0,"bg_color": "#14110E","text_color": "#E7E3DC"}
+{"page": 1,"id": 10,"obj": "label","x": 20,"y": 20,"w": 190,"h": 18,"text": "СТАРТОВАЯ СТРАНИЦА","text_font": "montserrat14","text_color": "#8A8377","click": false}
+{"page": 1,"id": 11,"obj": "btn","x": 360,"y": 14,"w": 120,"h": 28,"text": "ONLINE","text_font": "montserrat14","text_color": "#4FA86E","align": 2,"bg_opa": 0,"border_side": 0,"radius": 0,"action": {"up": "page 12"}}
+{"page": 1,"id": 20,"obj": "label","x": 0,"y": 70,"w": 480,"h": 22,"text": "ВОСКРЕСЕНЬЕ","template":"%A","text_font": "montserrat18","text_color": "#8A8377","align": 1,"click": false}
+{"page": 1,"id": 21,"obj": "label","x": 0,"y": 100,"w": 480,"h": 130,"text":"88:88","template":"%H:%M","text_font": "montserrat96","align": 1,"click": false}
+{"page": 1,"id": 22,"obj": "label","x": 0,"y": 240,"w": 480,"h": 30,"text":"2024/01/01","template":"%Y/%m/%d","text_font": "montserrat20","text_color": "#8A8377","align": 1,"click": false}
+{"page": 1,"id": 30,"obj": "line","x": 220,"y": 290,"w": 40,"h": 1,"points":[[0,0],[40,0]],"line_color": "#4A463F","line_width": 1,"click": false}
+{"page": 1,"id": 51,"obj": "label","x": 20,"y": 320,"w": 440,"h": 70,"text": "Интерфейсы настраиваются в\nAbromSoft или по MQTT","text_font": "montserrat22","text_color": "#8A8377","align": 1,"click": false}
+{"page": 1,"id": 52,"obj": "label","x": 30,"y": 425,"w": 420,"h": 40,"text": "Для сброса сетевых настроек\nнажмите на кнопку ONLINE","text_font": "montserrat14","text_color": "#D79A4A","align": 1,"click": false}

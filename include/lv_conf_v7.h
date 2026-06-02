@@ -616,7 +616,7 @@ typedef void* lv_indev_drv_user_data_t;            /*Type of user data in the in
 #endif
 
 #ifndef HASP_FONT_1
-#define HASP_FONT_1 robotocondensed_regular_12_all 
+#define HASP_FONT_1 robotocondensed_regular_12_all
 #endif
 #ifndef HASP_FONT_2
 #define HASP_FONT_2 robotocondensed_regular_16_all  
