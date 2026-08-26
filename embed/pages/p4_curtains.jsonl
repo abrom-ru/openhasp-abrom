@@ -1,32 +1,32 @@
 {"page": 4, "id": 0, "bg_color": "#14110E", "text_color": "#E7E3DC", "swipe": {"left": "page 5", "right": "page 3"}}
-{"page": 4, "id": 10, "obj": "obj", "x": 0, "y": 0, "w": 480, "h": 36, "bg_color": "#1A1713", "radius": 0, "border_width": 0, "click": false, "border_side": 0,"bg_grad_dir": 0, "bg_grad_dir02": 0}
-{"page": 4, "id": 11, "obj": "label", "x": 16, "y": 8, "w": 280, "h": 20, "text": "ШТОРЫ", "text_font": "montserrat14", "align": 0, "click": false, "text_color": "#8A8377"}
-{"page": 4, "id": 12, "obj": "label", "x": 384, "y": 8, "w": 80, "h": 20, "text": "88:88", "text_font": "montserrat18", "align": 2, "click": false, "text_color": "#E7E3DC", "template": "%H:%M"}
+{"page": 4, "id": 10, "obj": "obj", "x": 0, "y": 0, "w": 480, "h": 34, "bg_color": "#1A1713", "radius": 0, "border_width": 0, "click": false, "border_side": 0,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+{"page": 4, "id": 11, "obj": "label", "x": 16, "y": 7, "w": 280, "h": 20, "text": "ШТОРЫ", "text_font": "montserrat14", "align": 0, "click": false, "text_color": "#8A8377"}
+{"page": 4, "id": 12, "obj": "label", "x": 384, "y": 7, "w": 80, "h": 20, "text": "88:88", "text_font": "montserrat18", "align": 2, "click": false, "text_color": "#E7E3DC", "template": "%H:%M"}
 
-{"page": 4, "id": 20, "obj": "obj", "x": 16, "y": 52, "w": 448, "h": 120, "bg_color": "#1A1713", "radius": 12, "border_width": 0, "click": false,"bg_grad_dir": 0, "bg_grad_dir02": 0}
-{"page": 4, "id": 21, "obj": "label", "x": 30, "y": 64, "w": 40, "h": 40, "text": "\uE0AC", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
-{"page": 4, "id": 22, "obj": "label", "x": 88, "y": 72, "w": 240, "h": 24, "text": "Гостиная", "text_font": "montserrat20", "align": 0, "click": false, "text_color": "#E7E3DC"}
-{"page": 4, "id": 23, "obj": "label", "x": 340, "y": 72, "w": 110, "h": 24, "text": "80%", "text_font": "montserrat20", "align": 2, "click": false, "text_color": "#D79A4A"}
+{"page": 4, "id": 20, "obj": "obj", "x": 16, "y": 44, "w": 448, "h": 110, "bg_color": "#1A1713", "radius": 12, "border_width": 0, "click": false,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+{"page": 4, "id": 21, "obj": "label", "x": 30, "y": 56, "w": 40, "h": 40, "text": "\uE0AC", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 4, "id": 22, "obj": "label", "x": 88, "y": 64, "w": 240, "h": 24, "text": "Гостиная", "text_font": "montserrat20", "align": 0, "click": false, "text_color": "#E7E3DC"}
+{"page": 4, "id": 23, "obj": "label", "x": 340, "y": 64, "w": 110, "h": 24, "text": "80%", "text_font": "montserrat20", "align": 2, "click": false, "text_color": "#D79A4A"}
 
-{"page": 4,"id":24,"obj":"slider","x":30,"y":140,"w":340,"h":20,"val":80,"min":0,"max":100,"radius": 14,"bg_opa": 0,"bg_color10": "#D79A4A","bg_color20": "#D79A4A","bg_grad_dir": 0,"bg_grad_dir10": 0,"bg_grad_dir20": 0,"radius20": 100,"border_width": 0,"border_color20": "#000000","border_width20": 2}
+{"page": 4,"id":24,"obj":"slider","x":30,"y":119,"w":340,"h":20,"val":80,"min":0,"max":100,"radius": 14,"bg_opa": 0,"bg_color10": "#D79A4A","bg_color20": "#D79A4A","bg_grad_dir": 0,"bg_grad_dir10": 0,"bg_grad_dir20": 0,"radius20": 100,"border_width": 0,"border_color20": "#000000","border_width20": 2}
 
-{"page": 4, "id": 25, "obj": "btn", "x": 386, "y": 128, "w": 64, "h": 32, "text": "STOP", "text_font": "montserrat14", "radius": 8, "align": 1, "toggle": false, "bg_opa": 255, "bg_opa01": 255, "bg_opa02": 255, "bg_color": "#1A1713", "bg_color01": "#E5AC68", "bg_color02": "#E5AC68", "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#EBA85C", "border_color02": "#B87A30", "border_width": 2, "border_width01": 2, "border_width02": 2,"bg_grad_dir": 0, "bg_grad_dir02": 0, "text_color": "#D79A4A"}
+{"page": 4, "id": 25, "obj": "btn", "x": 386, "y": 113, "w": 64, "h": 32, "text": "STOP", "text_font": "montserrat14", "radius": 8, "align": 1, "toggle": false, "bg_opa": 255, "bg_opa01": 255, "bg_opa02": 255, "bg_color": "#1A1713", "bg_color01": "#E5AC68", "bg_color02": "#E5AC68", "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#EBA85C", "border_color02": "#B87A30", "border_width": 2, "border_width01": 2, "border_width02": 2,"bg_grad_dir": 0, "bg_grad_dir02": 0, "text_color": "#D79A4A"}
 
-{"page": 4, "id": 30, "obj": "obj", "x": 16, "y": 184, "w": 448, "h": 120, "bg_color": "#1A1713", "radius": 12, "border_width": 0, "click": false,"bg_grad_dir": 0, "bg_grad_dir02": 0}
-{"page": 4, "id": 31, "obj": "label", "x": 30, "y": 196, "w": 40, "h": 40, "text": "\uE0AC", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
-{"page": 4, "id": 32, "obj": "label", "x": 88, "y": 204, "w": 240, "h": 24, "text": "Спальня", "text_font": "montserrat20", "align": 0, "click": false, "text_color": "#E7E3DC"}
-{"page": 4, "id": 33, "obj": "label", "x": 340, "y": 204, "w": 110, "h": 24, "text": "50%", "text_font": "montserrat20", "align": 2, "click": false, "text_color": "#D79A4A"}
+{"page": 4, "id": 30, "obj": "obj", "x": 16, "y": 164, "w": 448, "h": 110, "bg_color": "#1A1713", "radius": 12, "border_width": 0, "click": false,"bg_grad_dir": 0, "bg_grad_dir02": 0}
+{"page": 4, "id": 31, "obj": "label", "x": 30, "y": 176, "w": 40, "h": 40, "text": "\uE0AC", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 4, "id": 32, "obj": "label", "x": 88, "y": 184, "w": 240, "h": 24, "text": "Спальня", "text_font": "montserrat20", "align": 0, "click": false, "text_color": "#E7E3DC"}
+{"page": 4, "id": 33, "obj": "label", "x": 340, "y": 184, "w": 110, "h": 24, "text": "50%", "text_font": "montserrat20", "align": 2, "click": false, "text_color": "#D79A4A"}
 
-{"page": 4, "id": 34, "obj": "slider", "x": 30, "y": 272, "w": 340, "h": 20, "val": 50, "min": 0, "max": 100,"radius": 14,"bg_opa": 0,"bg_color10": "#D79A4A","bg_color20": "#D79A4A","bg_grad_dir": 0,"bg_grad_dir10": 0,"bg_grad_dir20": 0,"radius20": 100,"border_width": 0,"border_color20": "#000000","border_width20": 2}
+{"page": 4, "id": 34, "obj": "slider", "x": 30, "y": 239, "w": 340, "h": 20, "val": 50, "min": 0, "max": 100,"radius": 14,"bg_opa": 0,"bg_color10": "#D79A4A","bg_color20": "#D79A4A","bg_grad_dir": 0,"bg_grad_dir10": 0,"bg_grad_dir20": 0,"radius20": 100,"border_width": 0,"border_color20": "#000000","border_width20": 2}
 
-{"page": 4, "id": 35, "obj": "btn", "x": 386, "y": 260, "w": 64, "h": 32, "text": "STOP", "text_font": "montserrat14", "radius": 8, "align": 1, "toggle": false, "bg_opa": 255, "bg_opa01": 255, "bg_opa02": 255, "bg_color": "#1A1713", "bg_color01": "#E5AC68", "bg_color02": "#E5AC68", "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#EBA85C", "border_color02": "#B87A30", "border_width": 2, "border_width01": 2, "border_width02": 2,"bg_grad_dir": 0, "bg_grad_dir02": 0, "text_color": "#D79A4A"}
+{"page": 4, "id": 35, "obj": "btn", "x": 386, "y": 233, "w": 64, "h": 32, "text": "STOP", "text_font": "montserrat14", "radius": 8, "align": 1, "toggle": false, "bg_opa": 255, "bg_opa01": 255, "bg_opa02": 255, "bg_color": "#1A1713", "bg_color01": "#E5AC68", "bg_color02": "#E5AC68", "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#EBA85C", "border_color02": "#B87A30", "border_width": 2, "border_width01": 2, "border_width02": 2,"bg_grad_dir": 0, "bg_grad_dir02": 0, "text_color": "#D79A4A"}
 
-{"page": 4, "id": 40, "obj": "label", "x": 24, "y": 320, "w": 200, "h": 18, "text": "СЦЕНАРИИ", "text_font": "montserrat14", "align": 0, "click": false, "text_color": "#8A8377"}
+{"page": 4, "id": 40, "obj": "label", "x": 24, "y": 314, "w": 200, "h": 20, "text": "СЦЕНАРИИ", "text_font": "montserrat14", "align": 0, "click": false, "text_color": "#8A8377"}
 
-{"page": 4, "id": 50, "obj": "btn", "x": 24, "y": 348, "w": 210, "h": 88, "radius": 12, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
-{"page": 4, "id": 51, "obj": "label", "x": 38, "y": 360, "w": 36, "h": 36, "text": "\uE05D", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
-{"page": 4, "id": 52, "obj": "label", "x": 38, "y": 408, "w": 184, "h": 28, "text": "Открыть всё", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}
+{"page": 4, "id": 50, "obj": "btn", "x": 24, "y": 344, "w": 210, "h": 110, "radius": 12, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 4, "id": 51, "obj": "label", "x": 38, "y": 356, "w": 36, "h": 36, "text": "\uE05D", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 4, "id": 52, "obj": "label", "x": 38, "y": 404, "w": 184, "h": 28, "text": "Открыть всё", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}
 
-{"page": 4, "id": 60, "obj": "btn", "x": 246, "y": 348, "w": 210, "h": 88, "radius": 12, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
-{"page": 4, "id": 61, "obj": "label", "x": 260, "y": 360, "w": 36, "h": 36, "text": "\uE045", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
-{"page": 4, "id": 62, "obj": "label", "x": 260, "y": 408, "w": 184, "h": 28, "text": "Закрыть всё", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}
+{"page": 4, "id": 60, "obj": "btn", "x": 246, "y": 344, "w": 210, "h": 110, "radius": 12, "text": "", "toggle": true, "val": 0, "bg_opa": 0, "bg_opa01": 0, "bg_opa02": 0, "border_opa": 255, "border_opa01": 255, "border_opa02": 255, "border_color": "#4A463F", "border_color01": "#D79A4A", "border_color02": "#B87A30", "border_width": 2}
+{"page": 4, "id": 61, "obj": "label", "x": 260, "y": 356, "w": 36, "h": 36, "text": "\uE045", "text_font": "24", "align": 0, "click": false, "text_color": "#D79A4A"}
+{"page": 4, "id": 62, "obj": "label", "x": 260, "y": 404, "w": 184, "h": 28, "text": "Закрыть всё", "text_font": "montserrat18", "align": 0, "click": false, "text_color": "#E7E3DC"}
