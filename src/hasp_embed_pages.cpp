@@ -7,8 +7,8 @@
 
 extern const uint8_t _binary_embed_pages_main_jsonl_start[] asm("_binary_embed_pages_main_jsonl_start");
 extern const uint8_t _binary_embed_pages_main_jsonl_end[]   asm("_binary_embed_pages_main_jsonl_end");
-extern const uint8_t _binary_embed_pages_p2_btn6_jsonl_start[] asm("_binary_embed_pages_p2_btn6_jsonl_start");
-extern const uint8_t _binary_embed_pages_p2_btn6_jsonl_end[]   asm("_binary_embed_pages_p2_btn6_jsonl_end");
+extern const uint8_t _binary_embed_pages_p2_btn9_jsonl_start[] asm("_binary_embed_pages_p2_btn9_jsonl_start");
+extern const uint8_t _binary_embed_pages_p2_btn9_jsonl_end[]   asm("_binary_embed_pages_p2_btn9_jsonl_end");
 extern const uint8_t _binary_embed_pages_p2_btnScene_jsonl_start[] asm("_binary_embed_pages_p2_btnScene_jsonl_start");
 extern const uint8_t _binary_embed_pages_p2_btnScene_jsonl_end[]   asm("_binary_embed_pages_p2_btnScene_jsonl_end");
 extern const uint8_t _binary_embed_pages_p2_curtains_jsonl_start[] asm("_binary_embed_pages_p2_curtains_jsonl_start");
@@ -19,8 +19,8 @@ extern const uint8_t _binary_embed_pages_p2_tstat_btn_jsonl_start[] asm("_binary
 extern const uint8_t _binary_embed_pages_p2_tstat_btn_jsonl_end[]   asm("_binary_embed_pages_p2_tstat_btn_jsonl_end");
 extern const uint8_t _binary_embed_pages_p2_tstat_slider_jsonl_start[] asm("_binary_embed_pages_p2_tstat_slider_jsonl_start");
 extern const uint8_t _binary_embed_pages_p2_tstat_slider_jsonl_end[]   asm("_binary_embed_pages_p2_tstat_slider_jsonl_end");
-extern const uint8_t _binary_embed_pages_p3_btn6_jsonl_start[] asm("_binary_embed_pages_p3_btn6_jsonl_start");
-extern const uint8_t _binary_embed_pages_p3_btn6_jsonl_end[]   asm("_binary_embed_pages_p3_btn6_jsonl_end");
+extern const uint8_t _binary_embed_pages_p3_btn9_jsonl_start[] asm("_binary_embed_pages_p3_btn9_jsonl_start");
+extern const uint8_t _binary_embed_pages_p3_btn9_jsonl_end[]   asm("_binary_embed_pages_p3_btn9_jsonl_end");
 extern const uint8_t _binary_embed_pages_p3_btnScene_jsonl_start[] asm("_binary_embed_pages_p3_btnScene_jsonl_start");
 extern const uint8_t _binary_embed_pages_p3_btnScene_jsonl_end[]   asm("_binary_embed_pages_p3_btnScene_jsonl_end");
 extern const uint8_t _binary_embed_pages_p3_curtains_jsonl_start[] asm("_binary_embed_pages_p3_curtains_jsonl_start");
@@ -31,8 +31,8 @@ extern const uint8_t _binary_embed_pages_p3_tstat_btn_jsonl_start[] asm("_binary
 extern const uint8_t _binary_embed_pages_p3_tstat_btn_jsonl_end[]   asm("_binary_embed_pages_p3_tstat_btn_jsonl_end");
 extern const uint8_t _binary_embed_pages_p3_tstat_slider_jsonl_start[] asm("_binary_embed_pages_p3_tstat_slider_jsonl_start");
 extern const uint8_t _binary_embed_pages_p3_tstat_slider_jsonl_end[]   asm("_binary_embed_pages_p3_tstat_slider_jsonl_end");
-extern const uint8_t _binary_embed_pages_p4_btn6_jsonl_start[] asm("_binary_embed_pages_p4_btn6_jsonl_start");
-extern const uint8_t _binary_embed_pages_p4_btn6_jsonl_end[]   asm("_binary_embed_pages_p4_btn6_jsonl_end");
+extern const uint8_t _binary_embed_pages_p4_btn9_jsonl_start[] asm("_binary_embed_pages_p4_btn9_jsonl_start");
+extern const uint8_t _binary_embed_pages_p4_btn9_jsonl_end[]   asm("_binary_embed_pages_p4_btn9_jsonl_end");
 extern const uint8_t _binary_embed_pages_p4_btnScene_jsonl_start[] asm("_binary_embed_pages_p4_btnScene_jsonl_start");
 extern const uint8_t _binary_embed_pages_p4_btnScene_jsonl_end[]   asm("_binary_embed_pages_p4_btnScene_jsonl_end");
 extern const uint8_t _binary_embed_pages_p4_curtains_jsonl_start[] asm("_binary_embed_pages_p4_curtains_jsonl_start");
@@ -43,8 +43,8 @@ extern const uint8_t _binary_embed_pages_p4_tstat_btn_jsonl_start[] asm("_binary
 extern const uint8_t _binary_embed_pages_p4_tstat_btn_jsonl_end[]   asm("_binary_embed_pages_p4_tstat_btn_jsonl_end");
 extern const uint8_t _binary_embed_pages_p4_tstat_slider_jsonl_start[] asm("_binary_embed_pages_p4_tstat_slider_jsonl_start");
 extern const uint8_t _binary_embed_pages_p4_tstat_slider_jsonl_end[]   asm("_binary_embed_pages_p4_tstat_slider_jsonl_end");
-extern const uint8_t _binary_embed_pages_p5_btn6_jsonl_start[] asm("_binary_embed_pages_p5_btn6_jsonl_start");
-extern const uint8_t _binary_embed_pages_p5_btn6_jsonl_end[]   asm("_binary_embed_pages_p5_btn6_jsonl_end");
+extern const uint8_t _binary_embed_pages_p5_btn9_jsonl_start[] asm("_binary_embed_pages_p5_btn9_jsonl_start");
+extern const uint8_t _binary_embed_pages_p5_btn9_jsonl_end[]   asm("_binary_embed_pages_p5_btn9_jsonl_end");
 extern const uint8_t _binary_embed_pages_p5_btnScene_jsonl_start[] asm("_binary_embed_pages_p5_btnScene_jsonl_start");
 extern const uint8_t _binary_embed_pages_p5_btnScene_jsonl_end[]   asm("_binary_embed_pages_p5_btnScene_jsonl_end");
 extern const uint8_t _binary_embed_pages_p5_curtains_jsonl_start[] asm("_binary_embed_pages_p5_curtains_jsonl_start");
@@ -55,8 +55,8 @@ extern const uint8_t _binary_embed_pages_p5_tstat_btn_jsonl_start[] asm("_binary
 extern const uint8_t _binary_embed_pages_p5_tstat_btn_jsonl_end[]   asm("_binary_embed_pages_p5_tstat_btn_jsonl_end");
 extern const uint8_t _binary_embed_pages_p5_tstat_slider_jsonl_start[] asm("_binary_embed_pages_p5_tstat_slider_jsonl_start");
 extern const uint8_t _binary_embed_pages_p5_tstat_slider_jsonl_end[]   asm("_binary_embed_pages_p5_tstat_slider_jsonl_end");
-extern const uint8_t _binary_embed_pages_p6_btn6_jsonl_start[] asm("_binary_embed_pages_p6_btn6_jsonl_start");
-extern const uint8_t _binary_embed_pages_p6_btn6_jsonl_end[]   asm("_binary_embed_pages_p6_btn6_jsonl_end");
+extern const uint8_t _binary_embed_pages_p6_btn9_jsonl_start[] asm("_binary_embed_pages_p6_btn9_jsonl_start");
+extern const uint8_t _binary_embed_pages_p6_btn9_jsonl_end[]   asm("_binary_embed_pages_p6_btn9_jsonl_end");
 extern const uint8_t _binary_embed_pages_p6_btnScene_jsonl_start[] asm("_binary_embed_pages_p6_btnScene_jsonl_start");
 extern const uint8_t _binary_embed_pages_p6_btnScene_jsonl_end[]   asm("_binary_embed_pages_p6_btnScene_jsonl_end");
 extern const uint8_t _binary_embed_pages_p6_curtains_jsonl_start[] asm("_binary_embed_pages_p6_curtains_jsonl_start");
@@ -67,8 +67,8 @@ extern const uint8_t _binary_embed_pages_p6_tstat_btn_jsonl_start[] asm("_binary
 extern const uint8_t _binary_embed_pages_p6_tstat_btn_jsonl_end[]   asm("_binary_embed_pages_p6_tstat_btn_jsonl_end");
 extern const uint8_t _binary_embed_pages_p6_tstat_slider_jsonl_start[] asm("_binary_embed_pages_p6_tstat_slider_jsonl_start");
 extern const uint8_t _binary_embed_pages_p6_tstat_slider_jsonl_end[]   asm("_binary_embed_pages_p6_tstat_slider_jsonl_end");
-extern const uint8_t _binary_embed_pages_p7_btn6_jsonl_start[] asm("_binary_embed_pages_p7_btn6_jsonl_start");
-extern const uint8_t _binary_embed_pages_p7_btn6_jsonl_end[]   asm("_binary_embed_pages_p7_btn6_jsonl_end");
+extern const uint8_t _binary_embed_pages_p7_btn9_jsonl_start[] asm("_binary_embed_pages_p7_btn9_jsonl_start");
+extern const uint8_t _binary_embed_pages_p7_btn9_jsonl_end[]   asm("_binary_embed_pages_p7_btn9_jsonl_end");
 extern const uint8_t _binary_embed_pages_p7_btnScene_jsonl_start[] asm("_binary_embed_pages_p7_btnScene_jsonl_start");
 extern const uint8_t _binary_embed_pages_p7_btnScene_jsonl_end[]   asm("_binary_embed_pages_p7_btnScene_jsonl_end");
 extern const uint8_t _binary_embed_pages_p7_curtains_jsonl_start[] asm("_binary_embed_pages_p7_curtains_jsonl_start");
@@ -86,37 +86,37 @@ namespace {
 struct EmbedPage { const char* name; const uint8_t* start; const uint8_t* end; };
 const EmbedPage kEmbedPages[] = {
     { "main.jsonl", _binary_embed_pages_main_jsonl_start, _binary_embed_pages_main_jsonl_end },
-    { "p2_btn6.jsonl", _binary_embed_pages_p2_btn6_jsonl_start, _binary_embed_pages_p2_btn6_jsonl_end },
+    { "p2_btn9.jsonl", _binary_embed_pages_p2_btn9_jsonl_start, _binary_embed_pages_p2_btn9_jsonl_end },
     { "p2_btnScene.jsonl", _binary_embed_pages_p2_btnScene_jsonl_start, _binary_embed_pages_p2_btnScene_jsonl_end },
     { "p2_curtains.jsonl", _binary_embed_pages_p2_curtains_jsonl_start, _binary_embed_pages_p2_curtains_jsonl_end },
     { "p2_dimmer.jsonl", _binary_embed_pages_p2_dimmer_jsonl_start, _binary_embed_pages_p2_dimmer_jsonl_end },
     { "p2_tstat_btn.jsonl", _binary_embed_pages_p2_tstat_btn_jsonl_start, _binary_embed_pages_p2_tstat_btn_jsonl_end },
     { "p2_tstat_slider.jsonl", _binary_embed_pages_p2_tstat_slider_jsonl_start, _binary_embed_pages_p2_tstat_slider_jsonl_end },
-    { "p3_btn6.jsonl", _binary_embed_pages_p3_btn6_jsonl_start, _binary_embed_pages_p3_btn6_jsonl_end },
+    { "p3_btn9.jsonl", _binary_embed_pages_p3_btn9_jsonl_start, _binary_embed_pages_p3_btn9_jsonl_end },
     { "p3_btnScene.jsonl", _binary_embed_pages_p3_btnScene_jsonl_start, _binary_embed_pages_p3_btnScene_jsonl_end },
     { "p3_curtains.jsonl", _binary_embed_pages_p3_curtains_jsonl_start, _binary_embed_pages_p3_curtains_jsonl_end },
     { "p3_dimmer.jsonl", _binary_embed_pages_p3_dimmer_jsonl_start, _binary_embed_pages_p3_dimmer_jsonl_end },
     { "p3_tstat_btn.jsonl", _binary_embed_pages_p3_tstat_btn_jsonl_start, _binary_embed_pages_p3_tstat_btn_jsonl_end },
     { "p3_tstat_slider.jsonl", _binary_embed_pages_p3_tstat_slider_jsonl_start, _binary_embed_pages_p3_tstat_slider_jsonl_end },
-    { "p4_btn6.jsonl", _binary_embed_pages_p4_btn6_jsonl_start, _binary_embed_pages_p4_btn6_jsonl_end },
+    { "p4_btn9.jsonl", _binary_embed_pages_p4_btn9_jsonl_start, _binary_embed_pages_p4_btn9_jsonl_end },
     { "p4_btnScene.jsonl", _binary_embed_pages_p4_btnScene_jsonl_start, _binary_embed_pages_p4_btnScene_jsonl_end },
     { "p4_curtains.jsonl", _binary_embed_pages_p4_curtains_jsonl_start, _binary_embed_pages_p4_curtains_jsonl_end },
     { "p4_dimmer.jsonl", _binary_embed_pages_p4_dimmer_jsonl_start, _binary_embed_pages_p4_dimmer_jsonl_end },
     { "p4_tstat_btn.jsonl", _binary_embed_pages_p4_tstat_btn_jsonl_start, _binary_embed_pages_p4_tstat_btn_jsonl_end },
     { "p4_tstat_slider.jsonl", _binary_embed_pages_p4_tstat_slider_jsonl_start, _binary_embed_pages_p4_tstat_slider_jsonl_end },
-    { "p5_btn6.jsonl", _binary_embed_pages_p5_btn6_jsonl_start, _binary_embed_pages_p5_btn6_jsonl_end },
+    { "p5_btn9.jsonl", _binary_embed_pages_p5_btn9_jsonl_start, _binary_embed_pages_p5_btn9_jsonl_end },
     { "p5_btnScene.jsonl", _binary_embed_pages_p5_btnScene_jsonl_start, _binary_embed_pages_p5_btnScene_jsonl_end },
     { "p5_curtains.jsonl", _binary_embed_pages_p5_curtains_jsonl_start, _binary_embed_pages_p5_curtains_jsonl_end },
     { "p5_dimmer.jsonl", _binary_embed_pages_p5_dimmer_jsonl_start, _binary_embed_pages_p5_dimmer_jsonl_end },
     { "p5_tstat_btn.jsonl", _binary_embed_pages_p5_tstat_btn_jsonl_start, _binary_embed_pages_p5_tstat_btn_jsonl_end },
     { "p5_tstat_slider.jsonl", _binary_embed_pages_p5_tstat_slider_jsonl_start, _binary_embed_pages_p5_tstat_slider_jsonl_end },
-    { "p6_btn6.jsonl", _binary_embed_pages_p6_btn6_jsonl_start, _binary_embed_pages_p6_btn6_jsonl_end },
+    { "p6_btn9.jsonl", _binary_embed_pages_p6_btn9_jsonl_start, _binary_embed_pages_p6_btn9_jsonl_end },
     { "p6_btnScene.jsonl", _binary_embed_pages_p6_btnScene_jsonl_start, _binary_embed_pages_p6_btnScene_jsonl_end },
     { "p6_curtains.jsonl", _binary_embed_pages_p6_curtains_jsonl_start, _binary_embed_pages_p6_curtains_jsonl_end },
     { "p6_dimmer.jsonl", _binary_embed_pages_p6_dimmer_jsonl_start, _binary_embed_pages_p6_dimmer_jsonl_end },
     { "p6_tstat_btn.jsonl", _binary_embed_pages_p6_tstat_btn_jsonl_start, _binary_embed_pages_p6_tstat_btn_jsonl_end },
     { "p6_tstat_slider.jsonl", _binary_embed_pages_p6_tstat_slider_jsonl_start, _binary_embed_pages_p6_tstat_slider_jsonl_end },
-    { "p7_btn6.jsonl", _binary_embed_pages_p7_btn6_jsonl_start, _binary_embed_pages_p7_btn6_jsonl_end },
+    { "p7_btn9.jsonl", _binary_embed_pages_p7_btn9_jsonl_start, _binary_embed_pages_p7_btn9_jsonl_end },
     { "p7_btnScene.jsonl", _binary_embed_pages_p7_btnScene_jsonl_start, _binary_embed_pages_p7_btnScene_jsonl_end },
     { "p7_curtains.jsonl", _binary_embed_pages_p7_curtains_jsonl_start, _binary_embed_pages_p7_curtains_jsonl_end },
     { "p7_dimmer.jsonl", _binary_embed_pages_p7_dimmer_jsonl_start, _binary_embed_pages_p7_dimmer_jsonl_end },
