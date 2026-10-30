@@ -66,6 +66,7 @@ extern const uint8_t PAGES_JSONL_END[] asm("_binary_data_pages_pages_jsonl_end")
 
 #include "hasp_debug.h"
 #include "hasp_filesystem.h"
+#include "hasp_embed_fonts.h"
 
 #if defined(ARDUINO_ARCH_ESP32)
 #include "rom/crc.h"
@@ -326,6 +327,23 @@ void filesystemSetupFiles()
     filesystem_write_file("/montserrat.ttf", (const char*)MONTSERRAT_TTF_START,
                           MONTSERRAT_TTF_END - MONTSERRAT_TTF_START);
 #endif
+
+    // Pre-rendered fonts: rewrite when the embedded version differs in size, so regenerated fonts get updated
+    for(size_t i = 0; i < hasp_embed_font_count(); i++) {
+        const char* name;
+        size_t len;
+        const uint8_t* data = hasp_embed_font_get(i, &name, &len);
+        if(!data) continue;
+
+        if(HASP_FS.exists(name)) {
+            File file = HASP_FS.open(name, "r");
+            size_t size = file ? file.size() : 0;
+            if(file) file.close();
+            if(size == len) continue;
+            HASP_FS.remove(name);
+        }
+        filesystem_write_file(name, (const char*)data, len);
+    }
 }
 
 bool filesystemSetup(void)
