@@ -88,6 +88,8 @@ class Esp32Device : public BaseDevice {
 #include "m5stackcore2.h"
 #elif defined(TWATCH)
 #include "twatch.h"
+#elif defined(WAVESHARE_LCD4_V4)
+#include "waveshare_lcd4_v4.h"
 #else
 using dev::Esp32Device;
 extern dev::Esp32Device haspDevice;

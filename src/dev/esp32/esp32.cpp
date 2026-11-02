@@ -461,6 +461,9 @@ long Esp32Device::get_uptime()
 #warning Building for TTGo T-Watch
 #include "dev/esp32/twatch.h"
 
+#elif defined(WAVESHARE_LCD4_V4)
+#include "dev/esp32/waveshare_lcd4_v4.h"
+
 #else
 dev::Esp32Device haspDevice;
 #endif

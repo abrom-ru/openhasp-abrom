@@ -106,6 +106,66 @@ void ArduinoGfx::init(int w, int h)
                                   st7701_4848S040_init_operations, sizeof(st7701_4848S040_init_operations));
     tft->begin(GFX_NOT_DEFINED); // Used for RFB displays
 
+#elif(TFT_WIDTH == 480) && (TFT_HEIGHT == 480) && defined(ST7701_DRIVER) && defined(WAVESHARE_LCD4_V4)
+    // Init sequence copied from Waveshare BSP esp32_s3_touch_lcd_4 v3.0.0 (lcd_init_cmds), as used by the factory firmware
+    static const uint8_t st7701_waveshare_lcd4_init_operations[] = {
+        BEGIN_WRITE, WRITE_COMMAND_8, 0x11, END_WRITE, DELAY, 120,
+
+        BEGIN_WRITE, WRITE_COMMAND_8, 0xFF, WRITE_BYTES, 5, 0x77, 0x01, 0x00, 0x00, 0x10,
+        WRITE_C8_D16, 0xC0, 0x3B, 0x00,
+        WRITE_C8_D16, 0xC1, 0x0D, 0x02,
+        WRITE_C8_D16, 0xC2, 0x21, 0x08,
+        WRITE_C8_D8, 0xCD, 0x08,
+        WRITE_COMMAND_8, 0xB0, WRITE_BYTES, 16,
+        0x00, 0x11, 0x18, 0x0E, 0x11, 0x06, 0x07, 0x08, 0x07, 0x22, 0x04, 0x12, 0x0F, 0xAA, 0x31, 0x18,
+        WRITE_COMMAND_8, 0xB1, WRITE_BYTES, 16,
+        0x00, 0x11, 0x19, 0x0E, 0x12, 0x07, 0x08, 0x08, 0x08, 0x22, 0x04, 0x11, 0x11, 0xA9, 0x32, 0x18,
+
+        WRITE_COMMAND_8, 0xFF, WRITE_BYTES, 5, 0x77, 0x01, 0x00, 0x00, 0x11,
+        WRITE_C8_D8, 0xB0, 0x60,
+        WRITE_C8_D8, 0xB1, 0x30,
+        WRITE_C8_D8, 0xB2, 0x87,
+        WRITE_C8_D8, 0xB3, 0x80,
+        WRITE_C8_D8, 0xB5, 0x49,
+        WRITE_C8_D8, 0xB7, 0x85,
+        WRITE_C8_D8, 0xB8, 0x21,
+        WRITE_C8_D8, 0xC1, 0x78,
+        WRITE_C8_D8, 0xC2, 0x78, END_WRITE, DELAY, 20,
+
+        BEGIN_WRITE,
+        WRITE_COMMAND_8, 0xE0, WRITE_BYTES, 3, 0x00, 0x1B, 0x02,
+        WRITE_COMMAND_8, 0xE1, WRITE_BYTES, 11, 0x08, 0xA0, 0x00, 0x00, 0x07, 0xA0, 0x00, 0x00, 0x00, 0x44, 0x44,
+        WRITE_COMMAND_8, 0xE2, WRITE_BYTES, 12, 0x11, 0x11, 0x44, 0x44, 0xED, 0xA0, 0x00, 0x00, 0xEC, 0xA0, 0x00, 0x00,
+        WRITE_COMMAND_8, 0xE3, WRITE_BYTES, 4, 0x00, 0x00, 0x11, 0x11,
+        WRITE_C8_D16, 0xE4, 0x44, 0x44,
+        WRITE_COMMAND_8, 0xE5, WRITE_BYTES, 16,
+        0x0A, 0xE9, 0xD8, 0xA0, 0x0C, 0xEB, 0xD8, 0xA0, 0x0E, 0xED, 0xD8, 0xA0, 0x10, 0xEF, 0xD8, 0xA0,
+        WRITE_COMMAND_8, 0xE6, WRITE_BYTES, 4, 0x00, 0x00, 0x11, 0x11,
+        WRITE_C8_D16, 0xE7, 0x44, 0x44,
+        WRITE_COMMAND_8, 0xE8, WRITE_BYTES, 16,
+        0x09, 0xE8, 0xD8, 0xA0, 0x0B, 0xEA, 0xD8, 0xA0, 0x0D, 0xEC, 0xD8, 0xA0, 0x0F, 0xEE, 0xD8, 0xA0,
+        WRITE_COMMAND_8, 0xEB, WRITE_BYTES, 7, 0x02, 0x00, 0xE4, 0xE4, 0x88, 0x00, 0x40,
+        WRITE_C8_D16, 0xEC, 0x3C, 0x00,
+        WRITE_COMMAND_8, 0xED, WRITE_BYTES, 16,
+        0xAB, 0x89, 0x76, 0x54, 0x02, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x20, 0x45, 0x67, 0x98, 0xBA,
+
+        WRITE_COMMAND_8, 0xFF, WRITE_BYTES, 5, 0x77, 0x01, 0x00, 0x00, 0x00,
+        WRITE_C8_D8, 0x36, 0x00,
+        WRITE_C8_D8, 0x3A, 0x66,
+        WRITE_COMMAND_8, 0x21, END_WRITE, DELAY, 120,
+
+        BEGIN_WRITE, WRITE_COMMAND_8, 0x29, END_WRITE};
+
+    Arduino_DataBus* bus            = new Arduino_SWSPI(TFT_DC, TFT_CS, TFT_SCLK, TFT_MOSI, TFT_MISO);
+    Arduino_ESP32RGBPanel* rgbpanel = new Arduino_ESP32RGBPanel(
+        TFT_DE, TFT_VSYNC, TFT_HSYNC, TFT_PCLK, TFT_R0, TFT_R1, TFT_R2, TFT_R3, TFT_R4, TFT_G0, TFT_G1, TFT_G2, TFT_G3,
+        TFT_G4, TFT_G5, TFT_B0, TFT_B1, TFT_B2, TFT_B3, TFT_B4, TFT_HSYNC_POLARITY, TFT_HSYNC_FRONT_PORCH,
+        TFT_HSYNC_PULSE_WIDTH, TFT_HSYNC_BACK_PORCH, TFT_VSYNC_POLARITY, TFT_VSYNC_FRONT_PORCH, TFT_VSYNC_PULSE_WIDTH,
+        TFT_VSYNC_BACK_PORCH);
+    tft = new Arduino_RGB_Display(w, h, rgbpanel, 0 /* rotation */, TFT_AUTO_FLUSH, bus, TFT_RST,
+                                  st7701_waveshare_lcd4_init_operations, sizeof(st7701_waveshare_lcd4_init_operations));
+    tft->begin(GFX_NOT_DEFINED); // Used for RFB displays
+
 #elif(TFT_WIDTH == 480) && (TFT_HEIGHT == 480) && defined(ST7701_DRIVER)
     /* More data bus class: https://github.com/moononournation/Arduino_GFX/wiki/Data-Bus-Class */
     Arduino_DataBus* bus            = new Arduino_SWSPI(TFT_DC, TFT_CS, TFT_SCLK, TFT_MOSI, TFT_MISO);

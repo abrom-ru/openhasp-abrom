@@ -44,6 +44,9 @@ static TaskHandle_t g_lvgl_task_handle;
 #ifndef TFT_ROTATION
 #define TFT_ROTATION 0
 #endif
+#ifndef HASP_DEFAULT_ROTATION // initial user rotation, TFT_ROTATION is the panel's native one
+#define HASP_DEFAULT_ROTATION TFT_ROTATION
+#endif
 #ifndef INVERT_COLORS
 #define INVERT_COLORS 0
 #endif
@@ -52,7 +55,7 @@ static TaskHandle_t g_lvgl_task_handle;
 
 gui_conf_t gui_settings = {.show_pointer   = false,
                            .backlight_pin  = TFT_BCKL,
-                           .rotation       = TFT_ROTATION,
+                           .rotation       = HASP_DEFAULT_ROTATION,
                            .invert_display = INVERT_COLORS,
                            .cal_data       = {0, 65535, 0, 65535, 0}};
 lv_obj_t* cursor;
