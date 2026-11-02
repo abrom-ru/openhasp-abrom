@@ -11,6 +11,10 @@
 #include "drv/tft/tft_driver.h"
 #include "../hasp_embed_pages.h"
 
+#if defined(ARDUINO_ARCH_ESP32)
+#include <Wire.h>
+#endif
+
 // #include "hasp_gui.h"
 
 #if HASP_USE_DEBUG > 0
@@ -1337,6 +1341,74 @@ void dispatch_reboot(bool saveConfig)
 
 /******************************************* Command Wrapper Functions *********************************/
 
+#if defined(ARDUINO_ARCH_ESP32)
+// Scan the primary I2C bus (shared with touch) and publish the addresses that ACK
+void dispatch_i2c_scan(const char*, const char*, uint8_t source)
+{
+    char payload[400];
+    size_t len = snprintf_P(payload, sizeof(payload), PSTR("{\"found\":["));
+    uint8_t count = 0;
+    for(uint8_t address = 1; address < 127; address++) {
+        Wire.beginTransmission(address);
+        if(Wire.endTransmission() != 0) continue;
+        len += snprintf_P(payload + len, sizeof(payload) - len, PSTR("%s\"0x%02x\""), count ? "," : "", address);
+        count++;
+        if(len >= sizeof(payload) - 16) break;
+    }
+    snprintf_P(payload + len, sizeof(payload) - len, PSTR("],\"count\":%u}"), count);
+    LOG_INFO(TAG_MSGR, F("I2C scan: %s"), payload);
+    dispatch_state_subtopic("i2cscan", payload);
+}
+
+// Read registers: payload "<addr> <reg> [len]", e.g. "0x44 0x00 2"; reg -1 = read without a register write
+void dispatch_i2c_read(const char*, const char* payload, uint8_t source)
+{
+    char* end;
+    long address = strtol(payload, &end, 0);
+    long reg     = strtol(end, &end, 0);
+    long count   = strtol(end, &end, 0);
+    if(count <= 0) count = 1;
+    if(count > 32) count = 32;
+    if(address <= 0 || address > 127) return;
+
+    char result[200];
+    int err = 0;
+    if(reg >= 0) {
+        Wire.beginTransmission((uint8_t)address);
+        Wire.write((uint8_t)reg);
+        err = Wire.endTransmission(false);
+    }
+    size_t len = snprintf_P(result, sizeof(result), PSTR("{\"addr\":\"0x%02lx\",\"reg\":%ld,\"err\":%d,\"data\":["),
+                            address, reg, err);
+    if(err == 0) {
+        uint8_t got = Wire.requestFrom((uint8_t)address, (uint8_t)count);
+        for(uint8_t i = 0; i < got && len < sizeof(result) - 8; i++)
+            len += snprintf_P(result + len, sizeof(result) - len, PSTR("%s%u"), i ? "," : "", Wire.read());
+    }
+    snprintf_P(result + len, sizeof(result) - len, PSTR("]}"));
+    dispatch_state_subtopic("i2cread", result);
+}
+
+// Write bytes: payload "<addr> <byte> [byte...]", e.g. "0x44 0x24 0x00"
+void dispatch_i2c_write(const char*, const char* payload, uint8_t source)
+{
+    char* end;
+    long address = strtol(payload, &end, 0);
+    if(address <= 0 || address > 127) return;
+    Wire.beginTransmission((uint8_t)address);
+    while(*end) {
+        char* next;
+        long value = strtol(end, &next, 0);
+        if(next == end) break;
+        Wire.write((uint8_t)value);
+        end = next;
+    }
+    char result[48];
+    snprintf_P(result, sizeof(result), PSTR("{\"addr\":\"0x%02lx\",\"err\":%d}"), address, Wire.endTransmission());
+    dispatch_state_subtopic("i2cwrite", result);
+}
+#endif
+
 // Periodically publish a JSON string indicating sensor status
 void dispatch_send_sensordata(const char*, const char*, uint8_t source)
 {
@@ -1721,6 +1793,11 @@ void dispatchSetup()
     dispatch_add_command(PSTR("screenshot"), dispatch_screenshot);
     dispatch_add_command(PSTR("discovery"), dispatch_queue_discovery);
     dispatch_add_command(PSTR("factoryreset"), dispatch_factory_reset);
+#if defined(ARDUINO_ARCH_ESP32)
+    dispatch_add_command(PSTR("i2cscan"), dispatch_i2c_scan);
+    dispatch_add_command(PSTR("i2cread"), dispatch_i2c_read);
+    dispatch_add_command(PSTR("i2cwrite"), dispatch_i2c_write);
+#endif
 
     /* obsolete commands */
     // dispatch_add_command(PSTR("dim"), dispatch_backlight_obsolete);
